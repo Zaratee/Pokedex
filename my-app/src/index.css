@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "IBM_BIOS";
+  src: local("IBM_BIOS"),
+   url("./fonts/IBM_BIOS.ttf") format("truetype");
+  font-weight: bold;
+  }

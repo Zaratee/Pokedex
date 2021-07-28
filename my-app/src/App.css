@@ -1,38 +1,183 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pokemon-logo-img{
+  width: 40vh;
+  height: 15vh;
+  padding: 4vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pokemon-card {
+  background-image: url('https://i.pinimg.com/474x/ed/c7/c6/edc7c6437653ab73346c7bf08c884077.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vh;
+  height: 60vh;
+  transition: all .2s ease-in-out;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.pokemon-card:hover{
+  transform: scale(1.05);
+}
+
+.card-container-row{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.card{
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: -1px 5px 20px 2px rgba(0,0,0,0.49);
+  transition: all .2s ease-in-out;
+
+}
+.pokemon-id{
+  padding-top: 2vh;
+}
+
+.pokemon-img{
+  width: 20vh;
+  height: 20vh;
+}
+.table-stats{
+  margin-top: 8vh;
+  background-color: #ddd5d2c0;
+}
+
+.table-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.input-search{
+  width: 27vh;
+  height: 4vh;
+  outline: 3px ridge rgba(245, 90, 1, 0.7);
+  outline-offset: -7px;
+  padding-left: 2vh;
+  border-radius: 5px;
+  font-weight: bold;
+  border-width: 0px;
+  margin-right: 2vh;
+  text-align: center;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.success-button{
+  background-color: green;
+  display: flex;
+  align-items: center;
   color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: -4px 5px 13px 1px rgba(0,0,0,0.42);
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+
+}
+.success-button:hover{
+  background-color: rgb(4, 165, 4);
+  box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.47);
 }
 
-.App-link {
-  color: #61dafb;
+.success-button:active{
+  transform: translateY(10px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-button{
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: -4px 5px 13px 1px rgba(0,0,0,0.42);
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
+
+.info-button:hover{
+  background-color: rgb(66, 66, 252);
+  box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.47);
+}
+
+.info-button:active{
+  transform: translateY(10px);
+}
+
+.btn-md{
+  width: 20vh;
+  text-align: center;
+}
+
+.center-flex{
+  display: flex;
+  justify-content: center;
+}
+
+.page-not-found{
+  border-radius: 10px;
+  width: 30vh;
+  height: 19vh;
+  padding: 5vh;
+  cursor: pointer;
+  background-image: url('https://cdn.dribbble.com/users/4040675/screenshots/10545158/media/85a3329e4202059593616d3b42f16e8d.png?compress=1&resize=400x300');
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+
+.page-not-found:hover{
+  box-shadow: 0px 2px 17px 6px rgba(0,0,0,0.34);
+  transform: scale(1.05);
+}
+.loading-container{
+  width: 30vh;
+  height: 29vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 17px 6px rgba(0,0,0,0.34);
+}
+.loading-img{
+  background-image: url('https://i.pinimg.com/originals/a3/12/53/a31253d7caf16bb66e104ce46339bd90.gif');
+  background-clip: inherit;
+  background-repeat: round;
+  width: 30vh;
+  height: 19vh;
+
+}
+.loading-spin{
+  background-image: url('https://media.tenor.com/images/a742721ea2075bc3956a2ff62c9bfeef/tenor.gif');
+  background-clip: inherit;
+  background-repeat: round;
+  height: 5vh;
+  width: 5vh;
+  
+}
+
+.margin-top{
+  margin-top: 2vh;
+}
+.margin-bottom{
+  margin-bottom: 2vh;
+}
+
+.justify-content-evenly{
+  justify-content: space-evenly;}
+
