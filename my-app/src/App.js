@@ -62,7 +62,7 @@ export default function App() {
           {result.data &&
             result.data.pokemon &&
             result.data.pokemon.evolutions &&(
-              <PokeCardEvolution pokemonEvolutions={result.data.pokemon.evolutions}/>) 
+              <PokeCardEvolution setPokemon={setPokemonToSearch} pokemonEvolutions={result.data.pokemon.evolutions}/>) 
             // JSON.stringify(result.data.pokemon.evolutions)
             }
             {result.data && result.data.pokemon && (
