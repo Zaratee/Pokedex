@@ -1,5 +1,5 @@
 # Pokedex
-Pokedex app with React, usign GraphQL and Redux
+Pokedex app with React, usign GraphQL 
 
 # Design
  |     Home Page    |
